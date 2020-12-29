@@ -1,3 +1,50 @@
-h1 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+* {
+    box-sizing: border-box;
 }
+body {
+    font-family: 'Mulish', sans-serif;
+}   
+
+#navtop {
+    position: relative;
+    height: 60px;
+    background-color: #F5FAFE;
+    padding: 0 165px;
+    font-size: 10px; 
+}
+
+.text-navtop {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+}
+
+.icon-navtop {
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+}
+
+#gift-icon {
+    left: 890px;
+}
+
+#gift-text {
+    left: 920px;
+}
+
+#star-icon {
+    left: 1082px;    
+}
+
+#loyalty-text {
+    left: 1110px;
+    
+}
+
+
+
+
+
