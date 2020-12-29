@@ -10,25 +10,20 @@ body {
 #navtop {
     position: relative;
     height: 60px;
-    background-color: #F5FAFE;
     padding: 0 165px;
-    font-size: 10px; 
+    font-size: 10px;
+    background-color: #F5FAFE; 
 }
 
-.text-navtop {
+.items-navtop {
     position: absolute;
     display: inline-block;
     top: 10px;
 }
 
-.icon-navtop {
-    position: absolute;
-    display: inline-block;
-    top: 20px;
-}
-
 #gift-icon {
     left: 890px;
+    top: 20px;
 }
 
 #gift-text {
@@ -36,7 +31,8 @@ body {
 }
 
 #star-icon {
-    left: 1082px;    
+    left: 1082px; 
+    top: 20px;   
 }
 
 #loyalty-text {
@@ -44,6 +40,77 @@ body {
     
 }
 
+#navbar {
+    position: relative;
+    height: 120px;
+    padding: 0 165px;
+    font-size: 40px;
+}
+
+.items-navbar {
+    position: absolute;
+    display: inline-block;
+    top: 15px; 
+    
+}
+
+#title-navbar, #title-navbar>p {
+    display: inline-block;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 24px;       
+}
+
+#tour-text {
+    color: #ff0000;
+}
+
+#input-navbar {
+    width: 350px;
+    height: 40px;
+    left: 400px;
+    top: 30px;
+}
+
+#search-navbar, #btn-navbar {
+    width: 65px;
+    height: 40px;
+    padding: 0;
+    left: 749px;
+    top: 29px;
+}
+
+#badge-cart {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    left: 975px;
+    top: 30px;
+}
+
+#badge-cart p {
+    position: relative;
+    text-align: center ;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 1px;
+}
+
+#cart-ico {
+    left: 960px;
+    top: 23px;
+
+}
+
+#user-img-navbar {
+    left: 1030px;
+    top: 30px;
+}
+
+#user-select-login {
+    left: 1080px;
+    top: 20px;
+}
 
 
 
