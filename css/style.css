@@ -5,6 +5,7 @@
 }
 body {
     font-family: 'Mulish', sans-serif;
+    margin: 0;
 }   
 
 #navtop {
@@ -36,7 +37,7 @@ body {
 }
 
 #loyalty-text {
-    left: 1110px;
+    left: 1112px;
     
 }
 
@@ -108,10 +109,31 @@ body {
 }
 
 #user-select-login {
-    left: 1080px;
+    left: 1078px;
     top: 20px;
 }
 
+#navbar-bottom {
+    height: 80px;
+    padding: 16px 125px;
+    background-color: #0A223D;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+}
 
+#items-navbar-bottom li {
+    position: relative;
+    display: inline;
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+    margin-left: 67px; 
+}
 
+#items-navbar-bottom li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
 
