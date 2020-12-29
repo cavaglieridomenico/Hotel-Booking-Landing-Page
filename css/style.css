@@ -66,9 +66,9 @@ body {
 }
 
 #input-navbar {
-    width: 350px;
+    width: 260px;
     height: 40px;
-    left: 400px;
+    left: 430px;
     top: 30px;
 }
 
@@ -76,7 +76,7 @@ body {
     width: 65px;
     height: 40px;
     padding: 0;
-    left: 749px;
+    left: 689px;
     top: 29px;
 }
 
@@ -136,4 +136,29 @@ body {
     margin-left: 0;
     padding-left: 0;
 }
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+} 
+
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+} 
+
+#gift-text>a:link {
+    color: #000;
+}
+
+#gift-text>a:visited {
+    color: #000; 
+}
+
+#loyalty-text>a:link {
+    color: #000;
+}
+
+#loyalty-text>a:visited {
+    color: #000;
 
