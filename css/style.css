@@ -6,7 +6,6 @@
 }
 
 body {
-    width: 1440px;
     font-family: 'Mulish', sans-serif;
     font-size: 10px;
     color: #333333;
@@ -40,12 +39,12 @@ body {
     background-image: url(../images/star.svg);
     width: 18px;
     height: 18px;
-    left: 1082px; 
+    left: 1096px; 
     top: 20px;   
 }
 
 #loyalty-text {
-    left: 1112px;    
+    left: 1124px;    
 }
 
 #gift-text>a:link {
@@ -136,16 +135,16 @@ body {
     margin-top: 10px;
 }
 
-#user-img-navbar {
+#img-user-navbar {
     background-image: url(../images/user-photo-0001.svg);
     width: 40px;
     height: 40px;
     left: 1030px;
 }
 
-#user-select-login {
+#select-user-login {
     width: 110px;
-    left: 1078px;
+    left: 1091px;
     margin-top: 10px;
 }
 
@@ -169,13 +168,14 @@ body {
     position: relative;
     display: inline-block;
     list-style: none; 
-    margin-left: 67px; 
+    margin-left: 69px; 
     transform: scale(1);
     transition: all 0.2s 0s ease-in-out;   
 }
 
 #menu-navbar-bottom li:first-child {
     margin-left: 0;
+    margin-right: 3px;
 }
 
 #menu-navbar-bottom a:link,
@@ -219,6 +219,61 @@ body {
     transform: scale(1.05); 
 }
 
+#title-hotel {
+    position: relative;
+    height: 100px;
+    padding: 20px 165px;
+    background-color: #F5FAFE;
+}
 
+#img-stars {
+    width: 48px;
+    height: 8px;
+    background-image: url(../images/Stars.svg);
+}
 
+#title-hotel h1 {
+    display: inline;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#offer-title-hotel {
+    display: inline-block;
+    background-color: #EC1F46;
+    border-radius: 5%;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#title-hotel h1 p {
+    display: inline-block;
+    font-size: 12;
+}
+
+#rating-title-hotel {
+    position: relative;
+    width: 65px;
+    height: 45;
+    left: 973px;
+    bottom: 25px;
+    background-color: #EC1F46;
+    border-radius: 5%;
+    color: #ffffff;
+    text-align: center;
+}
+
+#rating-title-hotel>#row-1{
+    font-size: 8;
+    font-weight: 600;
+}
+
+#rating-title-hotel>#row-2{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#rating-title-hotel #row-2-2 {
+    font-size: 10px;
+}
 
