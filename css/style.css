@@ -2,24 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 body {
+    width: 1440px;
     font-family: 'Mulish', sans-serif;
-    margin: 0;
+    font-size: 10px;
+    color: #333333;
 }   
 
 #navtop {
     position: relative;
     height: 60px;
     padding: 0 165px;
-    font-size: 10px;
     background-color: #F5FAFE; 
 }
 
 .items-navtop {
     position: absolute;
     display: inline-block;
-    top: 10px;
+    top: 15px;
 }
 
 #gift-icon {
@@ -37,8 +39,23 @@ body {
 }
 
 #loyalty-text {
-    left: 1112px;
-    
+    left: 1112px;    
+}
+
+#gift-text>a:link {
+    color: #000;
+}
+
+#gift-text>a:visited {
+    color: #000; 
+}
+
+#loyalty-text>a:link {
+    color: #000;
+}
+
+#loyalty-text>a:visited {
+    color: #000;
 }
 
 #navbar {
@@ -72,12 +89,16 @@ body {
     top: 30px;
 }
 
-#search-navbar, #btn-navbar {
+#container-btn-navbar, #btn-navbar {
     width: 65px;
     height: 40px;
     padding: 0;
     left: 689px;
     top: 29px;
+}
+
+#btn-navbar:hover {
+    cursor: pointer;
 }
 
 #badge-cart {
@@ -100,7 +121,6 @@ body {
 #cart-ico {
     left: 960px;
     top: 23px;
-
 }
 
 #user-img-navbar {
@@ -114,6 +134,7 @@ body {
 }
 
 #navbar-bottom {
+    position: relative;
     height: 80px;
     padding: 16px 125px;
     background-color: #0A223D;
@@ -123,42 +144,66 @@ body {
     text-align: left;
 }
 
-#items-navbar-bottom li {
+#menu-navbar-bottom li {
     position: relative;
-    display: inline;
+    display: inline-block;
     list-style: none; 
     margin: 0; 
     padding: 0;
     margin-left: 67px; 
+    transform: scale(1);
+    transition: all 0.2s 0s ease-in-out;   
 }
 
-#items-navbar-bottom li:first-child {
+#menu-navbar-bottom li:first-child {
     margin-left: 0;
     padding-left: 0;
 }
 
-a:link {
+#menu-navbar-bottom a:link {
     color: #ffffff;
     text-decoration: none;
 } 
 
-a:visited {
+#menu-navbar-bottom a:visited {
     color: #ffffff;
     text-decoration: none;
 } 
 
-#gift-text>a:link {
-    color: #000;
+#menu-navbar-bottom li:hover{
+    transform: scale(1.05); 
 }
 
-#gift-text>a:visited {
-    color: #000; 
+#bread-crumb {
+    position: relative;
+    height: 50px;
+    background-color: #F5FAFE;
 }
 
-#loyalty-text>a:link {
-    color: #000;
+#menu-bread-crumb li{
+    position: relative;
+    display: inline-block;
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+    left: 120px;
+    top: 10px;
+    transform: scale(1);
+    transition: all 0.2s 0s ease-in-out; 
 }
 
-#loyalty-text>a:visited {
-    color: #000;
+#menu-bread-crumb a:link {
+    color: #333333;
+    text-decoration: none;
+} 
+
+#menu-bread-crumb a:visited {
+    color: #333333;
+    text-decoration: none;
+} 
+
+#menu-bread-crumb li:hover{
+    transform: scale(1.05); 
 }
+
+
