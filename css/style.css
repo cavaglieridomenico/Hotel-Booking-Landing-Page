@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
 }
+
 body {
     width: 1440px;
     font-family: 'Mulish', sans-serif;
@@ -14,17 +15,19 @@ body {
 #navtop {
     position: relative;
     height: 60px;
-    padding: 0 165px;
+    padding: 15px 165px;
     background-color: #F5FAFE; 
 }
 
 .items-navtop {
     position: absolute;
     display: inline-block;
-    top: 15px;
 }
 
-#gift-icon {
+#icon-gift {
+    background-image: url(../images/gift.svg);
+    width: 18px;
+    height: 18px;
     left: 890px;
     top: 20px;
 }
@@ -33,7 +36,10 @@ body {
     left: 920px;
 }
 
-#star-icon {
+#icon-star {
+    background-image: url(../images/star.svg);
+    width: 18px;
+    height: 18px;
     left: 1082px; 
     top: 20px;   
 }
@@ -44,38 +50,46 @@ body {
 
 #gift-text>a:link {
     color: #000;
+    text-decoration: none;
 }
 
 #gift-text>a:visited {
-    color: #000; 
+    color: #000;
+    text-decoration: none; 
 }
 
 #loyalty-text>a:link {
     color: #000;
+    text-decoration: none;
 }
 
 #loyalty-text>a:visited {
     color: #000;
+    text-decoration: none;
 }
 
 #navbar {
     position: relative;
     height: 120px;
-    padding: 0 165px;
+    padding: 30px 165px;
     font-size: 40px;
 }
 
 .items-navbar {
     position: absolute;
-    display: inline-block;
-    top: 15px; 
-    
+    display: inline-block;    
 }
 
-#title-navbar, #title-navbar>p {
-    display: inline-block;
+#title-navbar {
+    width: 190px;
+    height: 30px;
+    margin-top: 10px; 
     font-family: 'Luckiest Guy', cursive;
-    font-size: 24px;       
+    font-size: 24px;     
+}
+
+#title-navbar>p {
+    display: inline-block;     
 }
 
 #tour-text {
@@ -86,19 +100,15 @@ body {
     width: 260px;
     height: 40px;
     left: 430px;
-    top: 30px;
 }
 
-#container-btn-navbar, #btn-navbar {
+#btn-navbar {
     width: 65px;
     height: 40px;
-    padding: 0;
+    background-image: url(../images/Find\ Button.svg);
     left: 689px;
-    top: 29px;
-}
-
-#btn-navbar:hover {
     cursor: pointer;
+    border: none;
 }
 
 #badge-cart {
@@ -107,36 +117,42 @@ body {
     background-color: #ff0000;
     border-radius: 50%;
     left: 975px;
-    top: 30px;
-}
-
-#badge-cart p {
-    position: relative;
     text-align: center ;
     font-size: 14px;
     color: #ffffff;
-    margin-top: 1px;
 }
 
-#cart-ico {
+#badge-cart a:link, 
+#badge-cart a:visited {
+    color: #ffffff;
+    text-decoration: none;
+} 
+
+#ico-cart {
+    background-image: url(../images/shopping-cart.svg);
+    width: 24px;
+    height: 24px;
     left: 960px;
-    top: 23px;
+    margin-top: 10px;
 }
 
 #user-img-navbar {
+    background-image: url(../images/user-photo-0001.svg);
+    width: 40px;
+    height: 40px;
     left: 1030px;
-    top: 30px;
 }
 
 #user-select-login {
+    width: 110px;
     left: 1078px;
-    top: 20px;
+    margin-top: 10px;
 }
 
 #navbar-bottom {
     position: relative;
     height: 80px;
-    padding: 16px 125px;
+    padding: 16px 165px;
     background-color: #0A223D;
     font-size: 14px;
     color: #ffffff;
@@ -144,12 +160,15 @@ body {
     text-align: left;
 }
 
+#menu-navbar-bottom {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 #menu-navbar-bottom li {
     position: relative;
     display: inline-block;
     list-style: none; 
-    margin: 0; 
-    padding: 0;
     margin-left: 67px; 
     transform: scale(1);
     transition: all 0.2s 0s ease-in-out;   
@@ -157,14 +176,9 @@ body {
 
 #menu-navbar-bottom li:first-child {
     margin-left: 0;
-    padding-left: 0;
 }
 
-#menu-navbar-bottom a:link {
-    color: #ffffff;
-    text-decoration: none;
-} 
-
+#menu-navbar-bottom a:link,
 #menu-navbar-bottom a:visited {
     color: #ffffff;
     text-decoration: none;
@@ -176,8 +190,14 @@ body {
 
 #bread-crumb {
     position: relative;
+    padding: 10px 165px;
     height: 50px;
     background-color: #F5FAFE;
+}
+
+#menu-bread-crumb {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 #menu-bread-crumb li{
@@ -185,18 +205,11 @@ body {
     display: inline-block;
     list-style: none; 
     margin: 0; 
-    padding: 0;
-    left: 120px;
-    top: 10px;
     transform: scale(1);
     transition: all 0.2s 0s ease-in-out; 
 }
 
-#menu-bread-crumb a:link {
-    color: #333333;
-    text-decoration: none;
-} 
-
+#menu-bread-crumb a:link,
 #menu-bread-crumb a:visited {
     color: #333333;
     text-decoration: none;
@@ -205,5 +218,7 @@ body {
 #menu-bread-crumb li:hover{
     transform: scale(1.05); 
 }
+
+
 
 
