@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
 body {
+    /*width: 1440px;*/
     font-family: 'Mulish', sans-serif;
     font-size: 10px;
     color: #333333;
 }   
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
 
 #navtop {
     position: relative;
@@ -19,52 +37,35 @@ body {
 }
 
 .items-navtop {
-    position: absolute;
     display: inline-block;
 }
 
 #icon-gift {
+    position: absolute;
     background-image: url(../images/gift.svg);
     width: 18px;
     height: 18px;
-    left: 890px;
-    top: 20px;
+    left: 880px;
+    top: 18px;
 }
 
 #gift-text {
-    left: 920px;
+    position: relative;
+    left: 505px;
 }
 
 #icon-star {
+    position: absolute;
     background-image: url(../images/star.svg);
     width: 18px;
     height: 18px;
-    left: 1096px; 
-    top: 20px;   
+    left: 1075px; 
+    top: 18px;   
 }
 
 #loyalty-text {
-    left: 1124px;    
-}
-
-#gift-text>a:link {
-    color: #000;
-    text-decoration: none;
-}
-
-#gift-text>a:visited {
-    color: #000;
-    text-decoration: none; 
-}
-
-#loyalty-text>a:link {
-    color: #000;
-    text-decoration: none;
-}
-
-#loyalty-text>a:visited {
-    color: #000;
-    text-decoration: none;
+    position: relative;
+    left: 630px;    
 }
 
 #navbar {
@@ -75,7 +76,6 @@ body {
 }
 
 .items-navbar {
-    position: absolute;
     display: inline-block;    
 }
 
@@ -96,21 +96,35 @@ body {
 }
 
 #input-navbar {
+    position: relative;
     width: 260px;
     height: 40px;
-    left: 430px;
+    left: 62px;
+    bottom: 5px;
 }
 
 #btn-navbar {
+    position: relative;
     width: 65px;
     height: 40px;
     background-image: url(../images/Find\ Button.svg);
-    left: 689px;
+    left: 50px;
+    bottom: 10px;
     cursor: pointer;
     border: none;
 }
 
+#ico-cart {
+    background-image: url(../images/shopping-cart.svg);
+    position: relative;
+    width: 24px;
+    height: 24px;
+    left: 250px;
+    margin-top: 10px;
+}
+
 #badge-cart {
+    position: absolute;
     width: 20px;
     height: 20px;
     background-color: #ff0000;
@@ -121,31 +135,20 @@ body {
     color: #ffffff;
 }
 
-#badge-cart a:link, 
-#badge-cart a:visited {
-    color: #ffffff;
-    text-decoration: none;
-} 
-
-#ico-cart {
-    background-image: url(../images/shopping-cart.svg);
-    width: 24px;
-    height: 24px;
-    left: 960px;
-    margin-top: 10px;
-}
 
 #img-user-navbar {
+    position: relative;
     background-image: url(../images/user-photo-0001.svg);
     width: 40px;
     height: 40px;
-    left: 1030px;
+    left: 285px;
 }
 
 #select-user-login {
+    position: relative;
     width: 110px;
-    left: 1091px;
-    margin-top: 10px;
+    left: 280px;
+    bottom: 10px;
 }
 
 #navbar-bottom {
@@ -160,22 +163,26 @@ body {
 }
 
 #menu-navbar-bottom {
+    position: relative;
     margin-left: 0;
-    padding-left: 0;
+    padding: 0;
 }
 
 #menu-navbar-bottom li {
     position: relative;
-    display: inline-block;
-    list-style: none; 
-    margin-left: 69px; 
+    display: inline-block; 
+    margin-left: 65px; 
     transform: scale(1);
     transition: all 0.2s 0s ease-in-out;   
 }
 
 #menu-navbar-bottom li:first-child {
     margin-left: 0;
-    margin-right: 3px;
+    margin-right: 4px;
+}
+
+#menu-navbar-bottom li:last-child {
+    left: 5px;
 }
 
 #menu-navbar-bottom a:link,
@@ -195,25 +202,13 @@ body {
     background-color: #F5FAFE;
 }
 
-#menu-bread-crumb {
-    margin-left: 0;
-    padding-left: 0;
-}
-
 #menu-bread-crumb li{
     position: relative;
-    display: inline-block;
-    list-style: none; 
+    display: inline-block; 
     margin: 0; 
     transform: scale(1);
     transition: all 0.2s 0s ease-in-out; 
 }
-
-#menu-bread-crumb a:link,
-#menu-bread-crumb a:visited {
-    color: #333333;
-    text-decoration: none;
-} 
 
 #menu-bread-crumb li:hover{
     transform: scale(1.05); 
@@ -239,11 +234,18 @@ body {
 }
 
 #offer-title-hotel {
+    position: absolute;
     display: inline-block;
+    width: 70px;
+    height: 20px;
     background-color: #EC1F46;
     border-radius: 5%;
     color: #ffffff;
     font-weight: 600;
+    text-align: center;
+    padding-top: 4px;
+    left: 450px;
+    top: 33px;
 }
 
 #title-hotel h1 p {
@@ -252,11 +254,11 @@ body {
 }
 
 #rating-title-hotel {
-    position: relative;
+    position: absolute;
     width: 65px;
     height: 45;
-    left: 973px;
-    bottom: 25px;
+    left: 1120px;
+    bottom: 38px;
     background-color: #EC1F46;
     border-radius: 5%;
     color: #ffffff;
@@ -276,4 +278,181 @@ body {
 #rating-title-hotel #row-2-2 {
     font-size: 10px;
 }
+
+#booking {
+    display: flex;
+    flex-flow: column wrap; 
+    height: 450px;
+    padding: 0 165px;    
+}
+
+#container-photo-booking,
+#photo-booking {
+    width: 680px;
+    height: 425px; 
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+#arrow-left-booking,
+#arrow-right-booking {
+    width: 30px;
+    height: 30px;
+    background-color: #cccccc3d;
+    position: absolute;
+    top: 600px;
+    cursor: pointer;
+}
+
+#arrow-left-booking {
+    background-image: url(../images/chevron-left.svg);
+}
+
+#arrow-right-booking {
+    left: 815px;
+    background-image: url(../images/chevron-right.svg);
+}
+
+#price-booking {
+    align-self: flex-end;
+    width: 328px;
+    height: 205px;
+    border-radius: 5%;
+    background-color: #0A223D;
+    color: #ffffff;
+    padding: 20px 20px;
+}
+
+#menu-1-price-booking {
+    display: inline-block;
+    font-size: 8px;
+}
+
+#menu-1-price-booking li:nth-child(2) {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+#menu-1-price-booking li:nth-child(3) {
+    font-size: 12px;
+}
+
+#menu-1-price-booking li:nth-child(4) {
+    font-size: 18px;
+}
+
+#menu-1-price-booking li:last-child {
+    font-size: 18px;
+    block-size: 600;
+}
+
+#menu-2-price-booking {
+    display: inline-block;
+    position: relative;
+    left: 85px;
+    text-align: end;
+    font-size: 12px;
+}
+
+#menu-2-price-booking li:nth-child(3) {
+    font-size: 36px;
+}
+
+#menu-2-price-booking:last-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#icon-peaple-booking {
+    width: 14px;
+    height: 14px;
+}
+
+#icon-room-booking {
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/icon-home.svg);
+}
+
+#icon-phone-booking {
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/icon-phone-call.svg);
+}
+
+#btn-booking {
+    position: relative;
+    width: 268px;
+    height: 50px;
+    border-radius: 2%;
+    background-color: #EC1F46;
+    top: 15px;
+    left: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+#map-booking {
+    align-self: flex-end;
+    position: relative;
+    width: 328px;
+    height: 205px;
+    margin-top: 15px;
+    border-radius: 5%;
+    background-image: url(../images/map.svg);
+}
+
+#menu-map {
+    position: absolute;
+    display: inline-block;
+    width: 145px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: -0.5px 1px 2px 1px rgba(0, 0, 0, 0.2); 
+    font-family: 'Nunito', sans-serif;
+    font-size: 7px;
+    bottom: 10px;
+    left: 80px;
+    padding: 5px;
+}
+
+#menu-map li{
+    display: inline;  
+    margin-left: 20px;
+    transition: all 0.3s 0s ease;   
+}
+
+#menu-map li:hover {
+    color: #007ADF;
+    cursor: pointer;
+}
+
+#btn-zoom-map {
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: -0.5px 0.5px 2px 1px rgba(0, 0, 0, 0.2); 
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    top: 30px;
+    right: 10px;
+}
+
+#btn-zoom-map li{
+    padding-left: 4px;
+    cursor: pointer;
+}
+
+#btn-zoom-map li:nth-child(2) {
+    font-size: 3px;
+    cursor: unset;
+}
+
 
