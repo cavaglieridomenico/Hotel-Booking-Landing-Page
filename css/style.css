@@ -10,7 +10,9 @@ body {
     font-family: 'Mulish', sans-serif;
     font-size: 10px;
     color: #333333;
-    min-width: 1300px;    
+    min-width: 1300px; 
+    max-width: 1400px;  
+    margin: auto; 
 }   
 
 a:link,
@@ -288,27 +290,28 @@ justify-content: space-between;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between; 
-    height: 422px;
+    height: 420px;
     padding: 0 165px;    
 }
 
-#container-photo-booking,
+/*#container-photo-booking,*/
 #photo-booking {
-    /*width: 680px;
-    height: 425px; 
+    background-image: cover;
+    width: 680px;
+    height: 450px; 
     border-radius: 5%;
-    overflow: hidden;*/
+    overflow: hidden;
     /*height: 100%;
     width: 70%;*/
-    width: 42rem;
-    height: 42rem;
+    /*width: 42rem;
+    height: 42rem;*/
 }
 
 #arrow-left-booking,
 #arrow-right-booking {
     width: 30px;
     height: 30px;
-    background-color: #cccccc3d;
+    /*background-color: #cccccc3d;*/
     position: absolute;
     top: 600px;
     cursor: pointer;
@@ -331,14 +334,14 @@ justify-content: space-between;
     justify-content: space-between;
     flex-flow: row wrap; 
     /*flex: 0 1 auto;*/
-    /*width: 328px;
-    height: 205px;*/
+    width: 328px;
+    height: 205px;
     border-radius: 5%;
     background-color: #0A223D;
     color: #ffffff;
     padding: 20px 20px;
-    width: 20rem;
-    height: 12rem;
+    /*width: 20rem;
+    height: 12rem;*/
 }
 
 #menu-1-price-booking {
@@ -427,11 +430,11 @@ justify-content: space-between;
 #map-booking {
     position: relative;
     align-self: flex-end;
-    /*width: 328px;
-    height: 205px;*/
+    width: 328px;
+    height: 205px;
     /*margin-top: 15px;*/
-    width: 20rem;
-    height: 13rem;
+    /*width: 20rem;
+    height: 13rem;*/
     border-radius: 5%;
     background-image: url(../images/map.svg);
 }
