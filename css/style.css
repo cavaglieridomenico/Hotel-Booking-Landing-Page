@@ -10,9 +10,7 @@ body {
     font-family: 'Mulish', sans-serif;
     font-size: 10px;
     color: #333333;
-    min-width: 1300px;
-    max-width: 1440px;
-    
+    min-width: 1300px;    
 }   
 
 a:link,
