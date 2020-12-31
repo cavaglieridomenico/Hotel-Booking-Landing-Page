@@ -191,15 +191,6 @@ justify-content: space-between;
     transition: all 0.2s 0s ease-in-out;   
 }
 
-/*#menu-navbar-bottom li:first-child {
-    margin-left: 0;
-    margin-right: 4px;
-}
-
-#menu-navbar-bottom li:last-child {
-    left: 5px;
-} */
-
 #menu-navbar-bottom li:hover{
     transform: scale(1.05); 
 }
@@ -224,6 +215,9 @@ justify-content: space-between;
 }
 
 #title-hotel {
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content: space-between;
     position: relative;
     height: 100px;
     padding: 20px 165px;
@@ -263,11 +257,13 @@ justify-content: space-between;
 }
 
 #rating-title-hotel {
-    position: absolute;
+    position: relative;
+    align-self: flex-end;
+    
     width: 65px;
     height: 45;
-    left: 1120px;
-    bottom: 38px;
+
+    
     background-color: #EC1F46;
     border-radius: 5%;
     color: #ffffff;
