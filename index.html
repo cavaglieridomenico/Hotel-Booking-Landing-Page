@@ -4,55 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Grand Hotel Hiltons & Resorts - Viaggi, Beach, Shopping & Turismo</title>
+    <title>Grand Hotel Hilton & Resorts - Viaggi, Beach, Shopping & Turismo</title>
 </head>
 <body>
     <header>
         <div id="navtop">
-            <div id="info-text" class="items-navtop" >
+            <div id="info-navtop" class="items-navtop" >
                 <p><strong>Questions? Need Help?</strong>   
                     &nbsp;&nbsp;&nbsp;Call us on (+123) 456 1500</p>
             </div>
-            <div id="icon-gift" class="items-navtop">
-                <a href=""></a>
+            <div id="gift-navtop">
+                <div id="icon-gift"></div>
+                <div id="gift-text" class="items-navtop" >
+                    <a href="">
+                        <p>BTP Gift Card</p>
+                    </a>
+                </div>
             </div>
-            <div id="gift-text" class="items-navtop" >
-                <a href="">
-                    <p>BTP Gift Card</p>
-                </a>
+            <div id="loyalty-navtop"  class="items-navtop">
+                <div id="icon-star" href=""></div>
+                <div id="loyalty-text" class="items-navtop" >
+                    <a href="">
+                        <p>Loyalty Program</p>
+                    </a>
+                </div> 
             </div>
-            <div id="icon-star" class="items-navtop">
-                <a href=""></a>
-            </div>
-            <div id="loyalty-text" class="items-navtop" >
-                <a href="">
-                    <p>Loyalty Program</p>
-                </a>
-            </div> 
         </div>
         <div id="navbar">
             <div id="title-navbar" class="items-navbar">
                 <p>BEST&nbsp;</p><p id="tour-text">TOUR</p><P>&nbsp;PLAN</P>
             </div>  
-            <form class="items-navbar" action="">
+            <form id="form-navbar" class="items-navbar" action="">
                 <input id="input-navbar" class="items-navbar" type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search Location">
                 <button id="btn-navbar" class="items-navbar" type="submit" >                    
                 </button>
             </form>          
-            <div id="ico-cart" class="items-navbar">
-                <a href=""></a>
+            <div id="cart-navbar">
+                <a href=""><img id="ico-cart" src="./images/icon-shopping-cart.svg" alt=""></a>
+                <div id="badge-cart" class="items-navbar">
+                    <a href="">
+                        <p>2</p>
+                    </a>
+                </div>
             </div>
-            <div id="badge-cart" class="items-navbar">
-                <a href="">
-                    <p>2</p>
-                </a>
+            <div id="user-navbar">
+                <div id="img-user-navbar" class="items-navbar">
+                    <a href=""></a>
+                </div>
+                <select id="select-user-login" class="items-navbar">
+                    <option value="user-name" selected="selected">Nathan</option>
+                    <option value="user-name">Domenico</option>
+                </select>
             </div>
-            <div id="img-user-navbar" class="items-navbar">
-                <a href=""></a>
-            </div>
-            <select id="select-user-login" class="items-navbar">
-                <option value="user-name" selected="selected">Nathan</option>
-            </select>
         </div>
         <nav id="navbar-bottom">
             <ul id="menu-navbar-bottom">
