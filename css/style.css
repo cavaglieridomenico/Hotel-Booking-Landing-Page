@@ -489,4 +489,40 @@ justify-content: space-between;
     cursor: unset;
 }
 
+#package-summery {
+    position: relative;
+    height: 1050px;
+}
+
+#navbar-package {
+    position: relative;
+    height: 144px;
+    padding: 50px 165px;
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+    /*text-align: left;*/
+}
+
+#menu-navbar-package {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    padding: 0;
+}
+
+#menu-navbar-package li {
+    position: relative;
+    display: inline-block; 
+    padding-bottom: 10px;
+    transition: all 0.2s 0s ease-in-out;   
+}
+
+#menu-navbar-package li:hover{
+    color: #EC1F46;
+    font-weight: bold;
+    border-bottom: 4px solid currentColor;
+    cursor: context-menu;
+}
 
