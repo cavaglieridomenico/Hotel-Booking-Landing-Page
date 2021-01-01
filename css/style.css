@@ -435,21 +435,15 @@ a:visited {
     cursor: pointer;
 }
 
-#package-summery {
-    position: relative;
-    height: 1050px;
-}
-
 #navbar-package {
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 144px;
-    padding: 50px 165px;
+    height: 130px;
+    padding: 60px 165px 40px 165px;
     font-size: 14px;
     color: #333333;
     font-weight: bold;
-    padding-bottom: 65px;
     transition: all 0.2s 0s ease-in-out;
 }
 
@@ -458,4 +452,101 @@ a:visited {
     font-weight: bold;
     border-bottom: 4px solid currentColor;
 }
+
+#title-package {
+    position: relative;
+    padding: 0 165px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#section-1-package {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 165px;
+    height: 300px;
+}
+
+#box-1-section-1{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-evenly;
+    width: 500px;
+    height: 240px;
+    list-style-image: url(../images/circle\ check\ full.svg); 
+}
+
+#title-box-1-section-1 {
+    background-color: #0A223D;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 10px 20px;
+}
+
+#box-1-section-1 li {
+    font-size: 12px;
+    list-style-image: url(../images/circle\ check\ full.svg); 
+    list-style-position: outside;
+}
+
+#box-1-section-1 li:nth-child(even) {
+    list-style: none;
+}
+
+#box-1-section-1 #ul1 {
+    margin-right: 40px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+}
+
+#box-2-section-1{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-evenly;
+    width: 500px;
+    height: 240px;
+    
+}
+
+#title-box-2-section-1 {
+    background-color: #0A223D;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 10px 20px;
+}
+
+#box-2-section-1 #ul1 {
+    margin-right: 40px;
+    margin-bottom: 50px;
+    align-items: flex-start; 
+    list-style: none;
+}
+
+#box-2-section-1 #ul2 {
+    list-style: none;
+}
+
+#box-2-section-1 li {
+    font-size: 12px;
+    list-style-position: outside;
+    }
+
+#box-2-section-1 #ul1 li:first-child {
+    list-style-image: url(../images/circle\ check\ full.svg); 
+}
+
+#box-2-section-1 #ul2 li:first-child {
+    list-style-image: url(../images/calendar.svg); 
+}
+
 
