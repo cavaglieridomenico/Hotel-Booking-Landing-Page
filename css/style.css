@@ -29,6 +29,11 @@ a:visited {
 
 }
 
+header {
+    position: relative;
+    
+}
+
 #navtop {
     position: relative;
     display: flex;
@@ -63,6 +68,12 @@ a:visited {
     overflow: hidden;
 }
 
+#icon-star {
+    background-image: url(../images/icon-star.svg);
+    width: 18px;
+    height: 18px;   
+}
+
 #loyalty-navtop {
     display: flex;
     justify-content: space-between;
@@ -70,11 +81,6 @@ a:visited {
     height: 18px;
 }
 
-#icon-star {
-    background-image: url(../images/icon-star.svg);
-    width: 18px;
-    height: 18px;   
-}
 
 #navbar {
     position: relative;
@@ -86,7 +92,8 @@ a:visited {
 }
 
 #title-navbar {
-    width: 190px;
+    position: relative;
+    width: 200px;
     height: 30px;
     margin-top: 10px; 
     font-family: 'Luckiest Guy', cursive;
@@ -196,31 +203,52 @@ a:visited {
     background-color: #F5FAFE;
 }
 
-#title-hotel {
+#section-title {
+    position: relative;
+    height: 100px;
+    background-color: #F5FAFE;    
+}
+
+#box-title-hotel {
+    position: relative;
     display: flex;
     flex-flow: column wrap; 
     justify-content: space-between;
-    position: relative;
     height: 100px;
     padding: 20px 165px;
     background-color: #F5FAFE;
 }
 
+#title-hotel {
+    position: relative;
+    width: 350px;
+}
+
+
 #img-stars {
+    position: relative;
     width: 48px;
     height: 8px;
     background-image: url(../images/Stars.svg);
 }
 
 #title-hotel h1 {
-    display: inline;
+    /*display: inline;*/
     font-size: 24px;
     font-weight: bold;
 }
 
-#offer-title-hotel {
+#title-hotel p {
+    position: relative;
+    
+    /*display: inline-block;*/
+    font-size: 12;
+}
+
+#flash-offer {
     position: absolute;
-    display: inline-block;
+    left: 450px;  
+    top: 30px;
     width: 70px;
     height: 20px;
     background-color: #EC1F46;
@@ -229,13 +257,6 @@ a:visited {
     font-weight: 600;
     text-align: center;
     padding-top: 4px;
-    left: 450px;
-    top: 33px;
-}
-
-#title-hotel h1 p {
-    display: inline-block;
-    font-size: 12;
 }
 
 #rating-title-hotel {
@@ -266,12 +287,12 @@ a:visited {
     font-size: 10px;
 }
 
-#booking {
+#section-booking {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between; 
     height: 420px;
-    padding: 0 165px;    
+    padding: 0 165px;
 }
 
 #photo-booking {
@@ -445,6 +466,11 @@ a:visited {
     cursor: pointer;
 }
 
+#section-package-summery {
+    position: relative;
+    padding: 0 165px;
+}
+
 #navbar-package {
     position: relative;
     height: 130px;
@@ -472,11 +498,6 @@ a:visited {
     height: 70px;
     font-size: 24px;
     font-weight: bold;
-}
-
-#package-summery {
-    position: relative;
-    padding: 0 165px;
 }
 
 #container-box-1-box-2 {
@@ -558,7 +579,7 @@ a:visited {
 }
 
 #box-2  #ul2 li:first-child {
-    list-style-image: url(../images/calendar.svg); 
+    list-style-image: url(../images/ico-calendar.svg); 
 }
 
 #title-box-3  {
@@ -643,6 +664,256 @@ a:visited {
     content: "Check In & Check Out";
     color: #EC1F46;
     font-weight: 600px;
+}
+
+#section-other-packages {
+    position: relative;
+    padding: 0 165px;
+    height: 1180px;
+    background-color: #F5FAFE;
+}
+
+#title-other-packages {
+    position: relative;
+    background-color: #F5FAFE;
+    height: 150px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#section-other-packages
+#container-box-1-2 {
+    position: relative;
+    display: flex;
+    height: 480px;
+    justify-content: space-between;
+    background-color: #F5FAFE;    
+}
+ 
+#box-double-booking {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content: flex-start;
+    background-color: #0A223D;
+    width: 710px;
+    height: 480px;
+    border-radius: 2%;
+}
+
+.img-full-booking-box {
+    align-self: flex-start;
+    height: 480px;
+    width: 330px;
+}
+
+.img-full-booking-box img {
+    height: 100%;
+    max-width: 330px; 
+    object-fit: cover;
+    object-position: left;
+}
+ 
+.text-booking-box {
+    display: flex;
+    flex-flow: row wrap; 
+    width: 290px;
+    height: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    /*margin-bottom: auto;*/
+    /*padding-top: 20px;*/
+}
+
+.text-booking-box
+#img-stars {
+    align-self: flex-end;
+    width: 200px;
+    height: 15px;
+    background-image: url(../images/Stars.svg);
+    background-repeat: no-repeat;
+}
+
+
+.text-booking-box p {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: justify;
+    margin-top:20px;
+}
+
+
+.ul-booking {
+    position: relative;
+    width: 290px;
+    height: 120px;
+    color: #ffffff;
+    padding: 10px 0 0 0;
+}
+
+.ul-booking li {
+    list-style: none;
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.ul-booking li::before {
+    content: "\200B";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.ul-booking li:first-child:before {
+    background-image: url(../images/ico-map-pin.svg);
+}
+
+.ul-booking  li:nth-child(2):before {
+    background-image: url(../images/icon-peaple.svg);
+}
+
+.ul-booking  li:last-child:before {
+    background-image: url(../images/icon-home.svg);
+}
+
+.price {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    width: 290px;
+    height: 70px;
+}
+
+.ul-price {
+    padding-left: 0;
+}
+
+.ul-price li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.ul-price li:first-child {
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+.ul-price li:last-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price #btn {
+    width: 140px;
+    height: 40px;
+    background-color: #EC1F46;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+#box-single-booking {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #0A223D;
+    width: 330px;
+    height: 480px;
+    border-radius: 2%;
+}
+
+.img-half-booking-box {
+    align-self: flex-start;
+    height: 240px;
+    width: 330px;
+}
+
+.img-half-booking-box img {
+    max-height: 240px;
+    max-width: 330px; 
+    object-fit: cover;
+    object-position: left;
+}
+
+#box-single-booking 
+.text-booking-box {
+    height: 30px;
+}
+
+#section-other-packages
+#container-box-2 {
+    position: relative;
+    display: flex;
+    height: 480px;
+    justify-content: space-between;
+    background-color: #F5FAFE; 
+    margin-top: 20px;   
+}
+
+#section-guest-review {
+    position: relative;
+    padding: 0 165px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F5FAFE;
+    height: 550px;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#package-card {
+    background-color: #ffffff;
+    width: 730px;
+    height: 290px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: justify;
+    padding: 140px 100px 0;
+}
+
+#user-profile {
+    position: absolute;
+    top: 150px;
+    width: 110px;
+    height: 150px;
+    font-size: 10px;
+    font-weight: initial;
+    text-align: center;
+}
+
+#img-user-profile {
+    background-image: url(../images/user-photo-0002.svg);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#user-name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #EC1F46;
+    padding: 10px;
+}
+
+#user-profile #img-stars {
+    margin-left: 30px;
+    margin-top: 10px
 }
 
 
