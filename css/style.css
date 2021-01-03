@@ -813,7 +813,7 @@ header {
     font-weight: bold;
 }
 
-.price #btn {
+ #btn {
     width: 140px;
     height: 40px;
     background-color: #EC1F46;
@@ -915,6 +915,133 @@ header {
     margin-left: 30px;
     margin-top: 10px
 }
+
+#section-newsletter {
+    position: relative;
+    
+    height: 270px;
+    background-image: url(../images/newletter.svg);
+}
+
+#filter {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/newsletter-filter.svg);
+}
+
+#text-newsletter {
+    width: 200px;
+    height: 80px;
+    color: #ffffff;
+    margin-left: 250px;
+}
+
+#text-newsletter p{
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+#text-newsletter h3 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#form-newsletter {
+    position: relative; 
+    display: flex; 
+    width: 350px;
+    height: 40px;
+}
+
+#input-newsletter {
+    position: relative;
+    width: 350px;
+    height: 55px;
+}
+
+#btn-newsletter {
+    background-color: #EC1F46;
+    color: #ffffff;
+    position: relative;
+    width: 65px;
+    height: 55px;
+    cursor: pointer;
+    border: none;
+}
+
+#other-activities {
+    position: relative;
+    height: 500px;
+    padding: 0 165px;
+    background-color: #F5FAFE;
+}
+
+#title-other-activities {
+    position: relative;
+    height: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 75px;
+}
+
+#container-other-activities {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-other-activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 30px 20px;
+    width: 245px;
+    height: 245px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 2%;    
+
+}
+
+#box-1-other-activities {
+    background-image: url(../images/other-activities-filter-01.svg),url(../images/other-activities-01.svg);
+    
+}
+
+#box-2-other-activities {
+    background-image: url(../images/other-activities-filter-01.svg),url(../images/other-activities-02.svg);
+    max-width: 100%;
+}
+
+#box-3-other-activities {
+    background-image: url(../images/other-activities-filter-01.svg), url(../images/other-activities-03.svg);
+    
+}
+
+#box-4-other-activities {
+    background-image: url(../images/other-activities-filter-01.svg), url(../images/other-activities-04.svg);
+    
+}
+
+.text-other-activities {
+    position: relative;
+    
+    width: 200px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+#conteiner-other-activities #btn {
+    position: relative;
+    
+}
+
 
 
 
