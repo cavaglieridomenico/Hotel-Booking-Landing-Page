@@ -21,6 +21,10 @@ a:visited {
     color: inherit;
 }
 
+ul {
+    padding-left: 0;
+}
+
 .navbar {
     display: flex;
     margin: 0; 
@@ -81,7 +85,6 @@ header {
     height: 18px;
 }
 
-
 #navbar {
     position: relative;
     display: flex;
@@ -91,7 +94,7 @@ header {
     font-size: 40px;
 }
 
-#title-navbar {
+.title-best-tour {
     position: relative;
     width: 200px;
     height: 30px;
@@ -100,7 +103,7 @@ header {
     font-size: 24px;     
 }
 
-#title-navbar>p {
+.title-best-tour>p {
     display: inline-block;     
 }
 
@@ -295,30 +298,35 @@ header {
     padding: 0 165px;
 }
 
-#photo-booking {
-    background-image: cover;
+#box-photo-booking {
+    position: relative;
     width: 680px;
     height: 450px; 
     border-radius: 5%;
     overflow: hidden;
 }
 
+#photo-booking {
+    background-image: cover;
+}
+
 #arrow-left-booking,
 #arrow-right-booking {
+    position: absolute;
+    top: 50%;
     width: 30px;
     height: 30px;
-    position: absolute;
-    top: 600px;
     cursor: pointer;
 }
 
 #arrow-left-booking {
     background-image: url(../images/chevron-left.svg);
+    
 }
 
 #arrow-right-booking {
-    left: 815px;
     background-image: url(../images/chevron-right.svg);
+    right: 0;
 }
 
 #price-booking {
@@ -399,7 +407,7 @@ header {
     background-image: url(../images/icon-phone-call.svg);
 }
 
-#btn-booking {
+.btn-booking {
     position: relative;
     margin: auto;
     width: 80%;
@@ -821,6 +829,7 @@ header {
     text-align: center;
     font-size: 14px;
     padding-top: 10px;
+    cursor: pointer;
 }
 
 #box-single-booking {
@@ -961,6 +970,8 @@ header {
     position: relative;
     width: 350px;
     height: 55px;
+    border: none;
+    border-radius: 2%;
 }
 
 #btn-newsletter {
@@ -971,6 +982,7 @@ header {
     height: 55px;
     cursor: pointer;
     border: none;
+    border-radius: 3%;
 }
 
 #other-activities {
@@ -1020,13 +1032,12 @@ header {
 }
 
 #box-3-other-activities {
-    background-image: url(../images/other-activities-filter-01.svg), url(../images/other-activities-03.svg);
+    background-image: url(../images/other-activities-filter-03.svg), url(../images/other-activities-03.svg);
     
 }
 
 #box-4-other-activities {
-    background-image: url(../images/other-activities-filter-01.svg), url(../images/other-activities-04.svg);
-    
+    background-image: url(../images/other-activities-filter-03.svg), url(../images/other-activities-04.svg);    
 }
 
 .text-other-activities {
@@ -1041,6 +1052,278 @@ header {
     position: relative;
     
 }
+
+footer {
+    position: relative;
+    height: 900px;
+    padding: 0 165px;
+    background-color: #0A223D;
+    
+}
+
+#container-1-footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 350px;
+}
+
+#container-1-footer 
+.title-best-tour {
+    position: relative;
+    width: 170px;
+    height: 230px;
+    font-size: 58px;
+    color: #ffffff;
+    margin-top: 0;
+    line-height:55px;
+}
+
+.ul-footer {
+    position: relative;
+    height: 250px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.ul-footer
+li::before {
+    content: "\200B";
+}
+
+.ul-footer
+a:first-child {
+    display: block;
+    margin-top: 20px;
+}
+
+#ul-1-footer::before {
+    content: "ALL CATEGORIES";
+    font-size: 18px;
+    font-weight: bold;
+}
+#ul-2-footer::before {
+    content: "ADDITIONAL INFORMATION";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ul-3-footer::before {
+    content: "LEGAL INFORMATION";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#container-2-footer {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 350px;
+}
+
+#ul-4-footer {
+    position: relative;
+    font-size: 12px;
+    
+}
+
+#ul-4-footer::before {
+    content: "CONTACT DETAILS";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ul-4-footer
+li:first-child {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#ul-4-footer
+li:nth-child(3) {
+    display: block;
+    margin-top: 20px;
+}
+
+#ul-4-footer
+li:last-child {
+    display: block;
+    margin-top: 20px;
+}
+
+#ul-4-footer
+:nth-child(2):before {
+    display: inline-block;
+    background-image: url(../images/ico-map-pin-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+#ul-4-footer
+:nth-child(3):before {
+    display: inline-block;
+    background-image: url(../images/icon-phone-call-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    margin-right: 30px;
+}
+
+#ul-4-footer
+:nth-child(6):before {
+    display: inline-block;
+    background-image: url(../images/icon-email.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    margin-right: 30px;
+}
+
+#box-footer-social {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:stretch;
+    width: 520px;
+    height: 360px;
+    color: #ffffff;
+}
+
+#text-footer-social {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap; 
+    width: 300px;
+    height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#icon-facebook {
+    display: block-inline;
+    background-image: url(../images/icon-facebook.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+}
+
+#icon-youtube {
+    background-image: url(../images/icon-youtube.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#icon-instagram {
+    background-image: url(../images/icon-instagram.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.form-footer {
+    position: relative; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 540px;
+    height: 200px;
+}
+
+.input-footer {
+    position: relative;
+    width: 255px;
+    height: 50px;
+    border-radius: 2%;
+}
+
+#input-phone-footer {
+    margin-left: auto;
+}
+
+.textarea-footer {
+    resize: none;
+    width: 100%;
+    border-radius: 2%;
+}
+
+.btn-footer {
+    position: relative;
+    margin-top: auto;
+    width: 160px;
+    height: 50px;
+    background-color: #EC1F46;
+    border-style: none;
+    border-radius: 2%;
+    color: inherit;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-footer span {
+    padding-top: 50px;
+}
+
+#container-3-footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80px;
+    color: #ffffff;
+}
+
+#blank-space {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+#navbar-footer {
+    width: 260px;
+    justify-content: space-between;
+}
+
+#logos-footer {
+    position: relative;
+    background-image: url(../images/logos-footer.svg);
+    width: 130px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
