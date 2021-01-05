@@ -19,6 +19,7 @@ a:link,
 a:visited {
     text-decoration: none;
     color: inherit;
+    outline: 0;
 }
 
 ul {
@@ -30,12 +31,21 @@ ul {
     margin: 0; 
     padding: 0; 
     list-style: none; 
+}
 
+.list {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list>li::before {
+    content: "\200B";
 }
 
 header {
     position: relative;
-    
 }
 
 #navtop {
@@ -122,6 +132,10 @@ header {
     position: relative;
     width: 285px;
     height: 40px;
+    border-style: none;
+    background-color: #F5FAFE;
+    border-top-left-radius: 6%;
+    border-bottom-left-radius: 6%;
 }
 
 #btn-navbar {
@@ -141,10 +155,6 @@ header {
     width: 34px;
     height: 34px;
     padding-right: 10px;
-}
-
-#ico-cart {
-    width: 24px;
 }
 
 #badge-cart {
@@ -236,15 +246,12 @@ header {
 }
 
 #title-hotel h1 {
-    /*display: inline;*/
     font-size: 24px;
     font-weight: bold;
 }
 
 #title-hotel p {
     position: relative;
-    
-    /*display: inline-block;*/
     font-size: 12;
 }
 
@@ -294,7 +301,7 @@ header {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between; 
-    height: 420px;
+    height: 415px;
     padding: 0 165px;
 }
 
@@ -304,10 +311,6 @@ header {
     height: 450px; 
     border-radius: 5%;
     overflow: hidden;
-}
-
-#photo-booking {
-    background-image: cover;
 }
 
 #arrow-left-booking,
@@ -329,83 +332,97 @@ header {
     right: 0;
 }
 
-#price-booking {
+#box-price-booking {
     position: relative;
     align-self: flex-end;
-    
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap; 
-    width: 328px;
-    height: 205px;
+    width: 320px;
+    height: 195px;
     border-radius: 5%;
     background-color: #0A223D;
     color: #ffffff;
-    padding: 20px 20px;
+    padding: 25px 20px;
+    font-size: 12px;
 }
 
-#menu-1-price-booking {
+#list-1-price-booking {
     position: relative;
-    display: inline-block;
     font-size: 8px;
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
 }
 
-#menu-1-price-booking li:nth-child(2) {
+#list-1-price-booking li:nth-child(2) {
     font-size: 24px;
     font-weight: 800;
 }
 
-#menu-1-price-booking li:nth-child(3) {
+#list-1-price-booking li:nth-child(3) {
     font-size: 12px;
 }
 
-#menu-1-price-booking li:nth-child(4) {
-    font-size: 12px;
-}
-
-#menu-1-price-booking li:last-child {
+#list-1-price-booking li:last-child {
     font-size: 18px;
     block-size: 600;
+    padding-top: 7px;
 }
 
-#menu-2-price-booking {
+#list-2-price-booking {
     position: relative;
     display: inline-block;
     text-align: end;
-    font-size: 12px;
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
+    font-size: 12px;    
 }
 
-#menu-2-price-booking li:nth-child(3) {
-    font-size: 30px;
+#list-2-price-booking 
+li::before {
+    display: inline-block;
 }
 
-#menu-2-price-booking:last-child {
+#list-2-price-booking 
+li:first-child::before {
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/icon-peaple.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 12px;
+}
+
+#list-2-price-booking li:first-child {
+    padding-bottom: 5px;
+}
+
+#list-2-price-booking 
+li:nth-child(2)::before {
+    display: inline-block;
+    background-image: url(../images/icon-home.svg);
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 15px;
+}
+
+#list-2-price-booking li:nth-child(2) {
+    padding-bottom: 30px;
+}
+
+#list-2-price-booking 
+li:last-child::before {
+    background-image: url(../images/icon-phone-call.svg);
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 14px;
+}
+
+#list-2-price-booking li:last-child {
     font-size: 18px;
     font-weight: 600;
 }
 
-#icon-peaple-booking {
-    width: 14px;
-    height: 14px;
-}
-
-#icon-room-booking {
-    width: 14px;
-    height: 14px;
-    background-image: url(../images/icon-home.svg);
-}
-
-#icon-phone-booking {
-    width: 14px;
-    height: 14px;
-    background-image: url(../images/icon-phone-call.svg);
-}
 
 .btn-booking {
     position: relative;
@@ -424,8 +441,8 @@ header {
 #map-booking {
     position: relative;
     align-self: flex-end;
-    width: 328px;
-    height: 205px;
+    width: 320px;
+    height: 200px;
     border-radius: 5%;
     background-image: url(../images/map.svg);
 }
@@ -508,14 +525,14 @@ header {
     font-weight: bold;
 }
 
-#container-box-1-box-2 {
+#container-1-package-summery {
     position: relative;
     display: flex;
     justify-content: space-between;
     height: 200px;
 }
 
-#box-1 {
+#box-1-package-summery {
     position: relative;
     display: flex;
     flex-flow: row wrap; 
@@ -526,7 +543,7 @@ header {
     list-style-position: outside;
 }
 
-#title-box-1  {
+#title-box-1-package-summery  {
     background-color: #0A223D;
     width: 100%;
     height: 40px;
@@ -536,20 +553,22 @@ header {
     padding: 10px 0 10px 20px;
 }
 
-#box-1  #ul1 {
+#list-1-box-1-package-summery {
     margin-right: 40px;
     align-items: flex-start;
 }
 
-#box-1  li:nth-child(even) {
+#box-1-package-summery  
+li:nth-child(even) {
     list-style: none;
 }
 
-#box-1  #ul2 {
+#box-1-package-summery  
+#list-2-box-1-package-summery {
     margin-right: 20px;
 }
 
-#box-2 {
+#box-2-package-summery {
     position: relative;
     display: flex;
     flex-flow: row wrap; 
@@ -559,7 +578,7 @@ header {
     list-style-position: outside;
 }
 
-#title-box-2  {
+#title-box-2-package-summery  {
     background-color: #0A223D;
     width: 100%;
     height: 40px;
@@ -569,28 +588,30 @@ header {
     padding: 10px 0 10px 20px;
 }
 
-#box-2  #ul1 {
+#list-1-box-2-package-summery {
     margin-top: 8px;
     margin-right: 40px;
     align-items: flex-start; 
     list-style: none;
 }
 
-#box-2  #ul1 li:first-child {
+#list-1-box-2-package-summery li:first-child {
     list-style-image: url(../images/circle\ check\ full.svg); 
 }
 
-#box-2  #ul2 {
+#box-2-package-summery  
+#list-2-box-2-package-summery {
     list-style: none;
     margin-top: 8px;
     margin-right: 20px;
 }
 
-#box-2  #ul2 li:first-child {
+#box-2-package-summery  
+#list-2-box-2-package-summery li:first-child {
     list-style-image: url(../images/ico-calendar.svg); 
 }
 
-#title-box-3  {
+#title-container-2-package-summery  {
     position: relative;
     background-color: #0A223D;
     width: 100%;
@@ -601,7 +622,7 @@ header {
     font-weight: bold;
 }
 
-#box-3 {
+#container-2-package-summery {
     position: relative;
     display: flex;
     flex-flow: row wrap; 
@@ -610,25 +631,27 @@ header {
     font-size: 12px;
     height: 450px;
 }
-#ul-1,#ul-2,#ul-3 {
+
+#list-1-container-2-package-summery,
+#list-2-container-2-package-summery,
+#list-3-container-2-package-summery {
     width: 310px;
     height: 170px;
     margin-top: 40px;
 }
 
-#ul-4,#ul-5,#ul-6 {
+#list-4-container-2-package-summery,
+#list-5-container-2-package-summery,
+#list-6-container-2-package-summery {
     width: 310px;
     margin-bottom: 20px;
-    /*margin-left:120px;*/
 }
 
-#box-3 li {
-    list-style: none;
+#container-2-package-summery li {
     padding-top: 15px;
 }
 
-#box-3  li::before {
-    content: "\200B";
+#container-2-package-summery  li::before {
     display: inline-block;
     background-image: url(../images/circle\ check\ full.svg);
     background-repeat: no-repeat;
@@ -638,37 +661,43 @@ header {
     margin-right: 30px;
 }
 
-#box-3 #ul-1::before {
+#container-2-package-summery 
+#list-1-container-2-package-summery::before {
     content: "Purchase Inclusions";
     color: #EC1F46;
     font-weight: 600px;
 }
 
-#box-3 #ul-2::before {
+#container-2-package-summery 
+#list-2-container-2-package-summery::before {
     content: "Complimentary Land Based Activities";
     color: #EC1F46;
     font-weight: 600px;
 }
 
-#box-3 #ul-3::before {
+#container-2-package-summery 
+#list-3-container-2-package-summery::before {
     content: "Complimentary Water Based Activities";
     color: #EC1F46;
     font-weight: 600px;
 }
 
-#box-3 #ul-4::before {
+#container-2-package-summery 
+#list-4-container-2-package-summery::before {
     content: "Meal Plan Available";
     color: #EC1F46;
     font-weight: 600px;
 }
 
-#box-3 #ul-5::before {
+#container-2-package-summery 
+#list-5-container-2-package-summery::before {
     content: "Entertainment";
     color: #EC1F46;
     font-weight: 600px;
 }
 
-#box-3 #ul-6::before {
+#container-2-package-summery 
+#list-6-container-2-package-summery::before {
     content: "Check In & Check Out";
     color: #EC1F46;
     font-weight: 600px;
@@ -691,8 +720,7 @@ header {
     padding-top: 50px;
 }
 
-#section-other-packages
-#container-box-1-2 {
+#container-1-other-packages {
     position: relative;
     display: flex;
     height: 480px;
@@ -700,13 +728,13 @@ header {
     background-color: #F5FAFE;    
 }
  
-#box-double-booking {
+#box-double-other-packages {
     position: relative;
     display: flex;
     flex-flow: column wrap; 
     justify-content: flex-start;
     background-color: #0A223D;
-    width: 710px;
+    width: 675px;
     height: 480px;
     border-radius: 2%;
 }
@@ -724,7 +752,7 @@ header {
     object-position: left;
 }
  
-.text-booking-box {
+.text-box-other-packages {
     display: flex;
     flex-flow: row wrap; 
     width: 290px;
@@ -732,11 +760,9 @@ header {
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
-    /*margin-bottom: auto;*/
-    /*padding-top: 20px;*/
 }
 
-.text-booking-box
+.text-box-other-packages
 #img-stars {
     align-self: flex-end;
     width: 200px;
@@ -745,32 +771,27 @@ header {
     background-repeat: no-repeat;
 }
 
-
-.text-booking-box p {
+.text-box-other-packages p {
     font-size: 14px;
     font-weight: normal;
     text-align: justify;
     margin-top:20px;
 }
 
-
-.ul-booking {
-    position: relative;
+.list-booking-other-packages {
     width: 290px;
     height: 120px;
     color: #ffffff;
     padding: 10px 0 0 0;
 }
 
-.ul-booking li {
-    list-style: none;
+.list-booking-other-packages li {
     padding-top: 15px;
     font-size: 12px;
     font-weight: normal;
 }
 
-.ul-booking li::before {
-    content: "\200B";
+.list-booking-other-packages li::before {
     display: inline-block;
     background-repeat: no-repeat;
     background-size: cover;
@@ -779,15 +800,15 @@ header {
     margin-right: 10px;
 }
 
-.ul-booking li:first-child:before {
+.list-booking-other-packages li:first-child:before {
     background-image: url(../images/ico-map-pin.svg);
 }
 
-.ul-booking  li:nth-child(2):before {
+.list-booking-other-packages li:nth-child(2):before {
     background-image: url(../images/icon-peaple.svg);
 }
 
-.ul-booking  li:last-child:before {
+.list-booking-other-packages li:last-child:before {
     background-image: url(../images/icon-home.svg);
 }
 
@@ -801,27 +822,22 @@ header {
     height: 70px;
 }
 
-.ul-price {
-    padding-left: 0;
-}
-
-.ul-price li {
-    list-style: none;
+.list-price-other-packages li {
     padding-top: 5px;
 }
 
-.ul-price li:first-child {
+.list-price-other-packages li:first-child {
     font-size: 14px;
     font-weight: normal;
     text-decoration: line-through;
 }
 
-.ul-price li:last-child {
+.list-price-other-packages li:last-child {
     font-size: 24px;
     font-weight: bold;
 }
 
- #btn {
+#btn {
     width: 140px;
     height: 40px;
     background-color: #EC1F46;
@@ -832,7 +848,7 @@ header {
     cursor: pointer;
 }
 
-#box-single-booking {
+#box-single-other-packages {
     position: relative;
     display: flex;
     flex-flow: row wrap;
@@ -856,13 +872,12 @@ header {
     object-position: left;
 }
 
-#box-single-booking 
-.text-booking-box {
+#box-single-other-packages 
+.text-box-other-packages {
     height: 30px;
 }
 
-#section-other-packages
-#container-box-2 {
+#container-2-other-packages {
     position: relative;
     display: flex;
     height: 480px;
@@ -922,24 +937,18 @@ header {
 
 #user-profile #img-stars {
     margin-left: 30px;
-    margin-top: 10px
+    margin-top: 4px
 }
 
 #section-newsletter {
-    position: relative;
-    
-    height: 270px;
-    background-image: url(../images/newletter.svg);
-}
-
-#filter {
     position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url(../images/newsletter-filter.svg);
+    height: 270px;
+    background-image: url(../images/newsletter-filter.svg), url(../images/newletter.jpg);
 }
 
 #text-newsletter {
@@ -1021,23 +1030,27 @@ header {
 
 }
 
-#box-1-other-activities {
-    background-image: url(../images/other-activities-filter-01.svg),url(../images/other-activities-01.svg);
+#box-1-package-summery-other-activities {
+    background-image: url(../images/other-activities-filter-01.svg),
+    url(../images/other-activities-01.svg);
     
 }
 
-#box-2-other-activities {
-    background-image: url(../images/other-activities-filter-01.svg),url(../images/other-activities-02.svg);
+#box-2-package-summery-other-activities {
+    background-image: url(../images/other-activities-filter-01.svg),
+    url(../images/other-activities-02.svg);
     max-width: 100%;
 }
 
-#box-3-other-activities {
-    background-image: url(../images/other-activities-filter-03.svg), url(../images/other-activities-03.svg);
+#container-2-package-summery-other-activities {
+    background-image: url(../images/other-activities-filter-03.svg), 
+    url(../images/other-activities-03.svg);
     
 }
 
 #box-4-other-activities {
-    background-image: url(../images/other-activities-filter-03.svg), url(../images/other-activities-04.svg);    
+    background-image: url(../images/other-activities-filter-03.svg), 
+    url(../images/other-activities-04.svg);    
 }
 
 .text-other-activities {
@@ -1055,10 +1068,9 @@ header {
 
 footer {
     position: relative;
-    height: 900px;
+    height: 800px;
     padding: 0 165px;
     background-color: #0A223D;
-    
 }
 
 #container-1-footer {
@@ -1080,40 +1092,31 @@ footer {
     line-height:55px;
 }
 
-.ul-footer {
-    position: relative;
+.list-footer {
     height: 250px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
     font-size: 14px;
     color: #ffffff;
     font-weight: normal;
 }
 
-.ul-footer
-li::before {
-    content: "\200B";
-}
-
-.ul-footer
-a:first-child {
+.list-footer
+li:first-child {
     display: block;
     margin-top: 20px;
 }
 
-#ul-1-footer::before {
+#list-1-footer::before {
     content: "ALL CATEGORIES";
     font-size: 18px;
     font-weight: bold;
 }
-#ul-2-footer::before {
+#list-2-footer::before {
     content: "ADDITIONAL INFORMATION";
     font-size: 18px;
     font-weight: bold;
 }
 
-#ul-3-footer::before {
+#list-3-footer::before {
     content: "LEGAL INFORMATION";
     font-size: 18px;
     font-weight: bold;
@@ -1127,38 +1130,38 @@ a:first-child {
     height: 350px;
 }
 
-#ul-4-footer {
+#list-4-footer {
     position: relative;
     font-size: 12px;
     
 }
 
-#ul-4-footer::before {
+#list-4-footer::before {
     content: "CONTACT DETAILS";
     font-size: 18px;
     font-weight: bold;
 }
 
-#ul-4-footer
+#list-4-footer
 li:first-child {
     display: block;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#ul-4-footer
+#list-4-footer
 li:nth-child(3) {
     display: block;
     margin-top: 20px;
 }
 
-#ul-4-footer
+#list-4-footer
 li:last-child {
     display: block;
     margin-top: 20px;
 }
 
-#ul-4-footer
+#list-4-footer
 :nth-child(2):before {
     display: inline-block;
     background-image: url(../images/ico-map-pin-2.svg);
@@ -1169,7 +1172,7 @@ li:last-child {
     margin-right: 20px;
 }
 
-#ul-4-footer
+#list-4-footer
 :nth-child(3):before {
     display: inline-block;
     background-image: url(../images/icon-phone-call-2.svg);
@@ -1180,7 +1183,7 @@ li:last-child {
     margin-right: 30px;
 }
 
-#ul-4-footer
+#list-4-footer
 :nth-child(6):before {
     display: inline-block;
     background-image: url(../images/icon-email.svg);
@@ -1250,6 +1253,7 @@ li:last-child {
     width: 255px;
     height: 50px;
     border-radius: 2%;
+    font-family: 'Mulish', sans-serif;
 }
 
 #input-phone-footer {
