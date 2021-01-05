@@ -1068,7 +1068,7 @@ li:nth-child(even) {
 
 footer {
     position: relative;
-    height: 800px;
+    height: 900px;
     padding: 0 165px;
     background-color: #0A223D;
 }
@@ -1127,7 +1127,7 @@ li:first-child {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 350px;
+    height: 450px;
 }
 
 #list-4-footer {
@@ -1263,7 +1263,10 @@ li:last-child {
 .textarea-footer {
     resize: none;
     width: 100%;
+    height: 130px;
     border-radius: 2%;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .btn-footer {
