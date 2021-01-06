@@ -426,9 +426,10 @@ li:last-child::before {
 
 .btn-booking {
     position: relative;
-    margin: auto;
-    width: 80%;
-    height: 20%;
+    align-self: flex-end;
+    margin: 0;
+    width: 100%;
+    height: 23%;
     border-radius: 2%;
     background-color: #EC1F46;
     padding: 2%;
@@ -820,6 +821,7 @@ li:nth-child(even) {
     color: #ffffff;
     width: 290px;
     height: 70px;
+    padding-bottom: 10px;
 }
 
 .list-price-other-packages li {
@@ -837,7 +839,10 @@ li:nth-child(even) {
     font-weight: bold;
 }
 
-#btn {
+.btn-price {
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: 8px;
     width: 140px;
     height: 40px;
     background-color: #EC1F46;
@@ -846,6 +851,11 @@ li:nth-child(even) {
     font-size: 14px;
     padding-top: 10px;
     cursor: pointer;
+}
+
+#box-double-other-packages
+.btn-price {
+    margin-bottom: 0;
 }
 
 #box-single-other-packages {
@@ -1027,25 +1037,22 @@ li:nth-child(even) {
     font-weight: bold;
     color: #ffffff;
     border-radius: 2%;    
-
 }
 
-#box-1-package-summery-other-activities {
+#box-1-other-activities {
     background-image: url(../images/other-activities-filter-01.svg),
-    url(../images/other-activities-01.svg);
-    
+    url(../images/other-activities-01.svg);    
 }
 
-#box-2-package-summery-other-activities {
+#box-2-other-activities {
     background-image: url(../images/other-activities-filter-01.svg),
     url(../images/other-activities-02.svg);
     max-width: 100%;
 }
 
-#container-2-package-summery-other-activities {
+#box-3-other-activities {
     background-image: url(../images/other-activities-filter-03.svg), 
     url(../images/other-activities-03.svg);
-    
 }
 
 #box-4-other-activities {
@@ -1055,15 +1062,22 @@ li:nth-child(even) {
 
 .text-other-activities {
     position: relative;
-    
     width: 200px;
     height: 30px;
     margin-bottom: 30px;
 }
 
-#conteiner-other-activities #btn {
+#btn-other-activities {
     position: relative;
-    
+    margin-bottom: 8px;
+    width: 140px;
+    height: 40px;
+    background-color: #EC1F46;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+    cursor: pointer;
 }
 
 footer {
@@ -1267,6 +1281,12 @@ li:last-child {
     border-radius: 2%;
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+.form-footer *::placeholder {
+    font-family: 'Mulish', sans-serif; 
+    color: #413f3ff5;
+    
 }
 
 .btn-footer {
