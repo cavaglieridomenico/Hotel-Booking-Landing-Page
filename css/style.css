@@ -763,9 +763,14 @@ li:nth-child(even) {
     color: #ffffff;
 }
 
+#box-double-other-packages
+.text-box-other-packages {
+    height: 200px;
+}
+
 .text-box-other-packages
 #img-stars {
-    align-self: flex-end;
+    align-self: flex-start;
     width: 200px;
     height: 15px;
     background-image: url(../images/Stars.svg);
@@ -776,7 +781,7 @@ li:nth-child(even) {
     font-size: 14px;
     font-weight: normal;
     text-align: justify;
-    margin-top:20px;
+    margin: 20px 0 20px 0;
 }
 
 .list-booking-other-packages {
@@ -813,6 +818,11 @@ li:nth-child(even) {
     background-image: url(../images/icon-home.svg);
 }
 
+#box-double-other-packages
+.list-booking-other-packages li:first-child{
+    padding-top: 30px;
+}
+
 .price {
     position: relative;
     display: flex;
@@ -823,8 +833,6 @@ li:nth-child(even) {
     height: 70px;
     padding-bottom: 10px;
 }
-
-
 
 .list-price-other-packages li:first-child {
     font-size: 14px;
@@ -855,6 +863,11 @@ li:nth-child(even) {
 #box-double-other-packages
 .btn-price {
     margin-bottom: 0;
+}
+
+#box-double-other-packages
+.price {
+    margin-top: 30px;
 }
 
 #box-single-other-packages {
