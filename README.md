@@ -6,7 +6,7 @@ For the main structure of the body I followed the organization and nomenclature 
 body <br>
 header <br>
 main <br>
-section title" <br>
+section title <br>
 section booking <br>
 section package-summery <br>
 section other packages <br>
