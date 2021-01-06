@@ -817,21 +817,20 @@ li:nth-child(even) {
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     color: #ffffff;
     width: 290px;
     height: 70px;
     padding-bottom: 10px;
 }
 
-.list-price-other-packages li {
-    padding-top: 5px;
-}
+
 
 .list-price-other-packages li:first-child {
     font-size: 14px;
     font-weight: normal;
     text-decoration: line-through;
+    padding-bottom: 4px;
 }
 
 .list-price-other-packages li:last-child {
