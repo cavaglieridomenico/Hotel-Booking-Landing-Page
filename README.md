@@ -1,8 +1,7 @@
 # Hotel-Booking-Landing-Page
-I am proceeding with the creation of the page in graphic order from top to bottom.
-I tend to use flexbox.
+This web page is built using mainly CSS Flexbox.
 At the top of the CSS file are the main style rules.
-For the main structure of the body I am following the organization and nomenclature of the mockup.
+For the main structure of the body I followed the organization and nomenclature of the mockup.
 
 body <br>
 header <br>
